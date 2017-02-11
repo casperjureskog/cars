@@ -1,15 +1,15 @@
 class Car
 
-  attr_accessor :driver, :paints
+  attr_accessor :driver, :color
 
 
   def initialize(attrs = {})
-     @driver = (attrs [:driver])
-     @paints = (attrs [:paints])
+    @driver = (attrs [:driver])
+    @color = 'red'
   end
 
-  if @paints == nil then
-    puts "Please put paint on the car"
+  def set_color(n)
+    @color = n
   end
 
 end
